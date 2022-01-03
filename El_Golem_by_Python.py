@@ -18,6 +18,8 @@ def get_world():
 
 chosen_world=get_world()
 
+print('Continue')
+
 # Y, hecho de consonantes y vocales,
 # habrá un terrible Nombre, que la esencia
 # cifre de Dios y que la Omnipotencia
@@ -25,8 +27,15 @@ chosen_world=get_world()
 
 from turtle import *
 
+def poligono(lado, n):
+    for i in range(3):
+        forward(lado)
+        right(120)
+
 def espiral():
     for i in range(10, 200, 5):
         poligono(i, 3)
         right(10)
         speed(10)
+
+espiral()
